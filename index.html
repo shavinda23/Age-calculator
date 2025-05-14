@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <h1>Age Calculator</h1>
+        <button id="modeToggle">🌞 Light Mode</button>
+      </header>
+
+      <form id="ageForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" id="occupation" placeholder="Occupation" required />
+        <input type="date" id="dob" required />
+        <button type="submit">Calculate Age</button>
+      </form>
+
+      <section id="ageDisplay"></section>
+      <section id="result"></section>
+
+      <section id="savedDetails">
+        <h2>Saved Entries</h2>
+        <ul id="entryList"></ul>
+        <button id="clearBtn">Clear Entries</button>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
